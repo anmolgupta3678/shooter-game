@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url('backgroud.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+canvas {
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+#startScreen, #gameOverScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#difficultyButtons button, #restartBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#easyBtn { background-color: #4CAF50; color: white; }
+#mediumBtn { background-color: #ff9800; color: white; }
+#hardBtn { background-color: #f44336; color: white; }
+#restartBtn { background-color: #2196F3; color: white; }
+
+#newHighScore {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+#muteBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

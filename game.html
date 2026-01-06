@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooter Gun</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div id="startScreen">
+        <h1>Shooter Gun</h1>
+        <p>Select a difficulty to start the game.</p>
+        <div id="difficultyButtons">
+            <button id="easyBtn">Easy</button>
+            <button id="mediumBtn">Medium</button>
+            <button id="hardBtn">Hard</button>
+        </div>
+        <p class="controls">Controls: Left/Right Arrow Keys to Move, Space to Shoot</p>
+        <div id="highScoreDisplay">High Score: 0</div>
+    </div>
+
+    <canvas id="gameCanvas" style="display: none;"></canvas>
+
+    <div id="gameOverScreen" style="display: none;">
+        <h1>Game Over</h1>
+        <p id="finalScore">Your Score: 0</p>
+        <p id="newHighScore" style="display: none;">New High Score!</p>
+        <button id="restartBtn">Restart Game</button>
+    </div>
+
+    <button id="muteBtn">Mute</button>
+
+    <script src="game.js"></script>
+</body>
+</html>
